@@ -12,3 +12,11 @@ pip install -r requirements.txt
 pip install Pillow
 python manage.py migrate
 python manage.py runserver
+****************
+deactivate
+py -0
+py -3.13 -m venv .venv313
+.\.venv313\Scripts\Activate.ps1
+pip install -r requirements.txt
+pip install Pillow
+python manage.py migrate

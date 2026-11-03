@@ -1,0 +1,14 @@
+python -c "import sys; print(sys.executable)"
+python -c "import PIL, django; print(PIL.file); print(django.file)"
+********************************
+.\.venv\Scripts\python.exe manage.py migrate
+*******************
+deactivate
+py -0
+****************
+py -3.13 -m venv .venv313
+.\.venv313\Scripts\Activate.ps1
+pip install -r requirements.txt
+pip install Pillow
+python manage.py migrate
+python manage.py runserver
